@@ -40,7 +40,7 @@
     /* BLACKHOLE 글씨 스타일 */
     .blackhole-text {
       position: absolute;
-      top: 15%;
+      top: 25%; /* 기존보다 아래로 조정 */
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 4rem;
@@ -48,6 +48,7 @@
       color: white;
       opacity: 0;
       text-align: center;
+      z-index: 2; /* 다른 요소들보다 위에 표시 */
       animation: fadeIn 3s ease-in-out forwards;
     }
 
@@ -59,7 +60,7 @@
     .navbar-custom {
       background-color: rgba(17, 17, 17, 0.8);
       position: relative;
-      z-index: 1;
+      z-index: 3; /* 바보다 위에 위치 */
     }
 
     .navbar-custom .btn {
@@ -88,6 +89,7 @@
       text-align: center;
       padding: 10px;
       font-size: 14px;
+      z-index: 1;
     }
   </style>
 </head>
