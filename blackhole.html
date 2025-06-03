@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>블랙홀 정보</title>
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     * {
@@ -14,39 +13,52 @@
 
     html, body {
       height: 100%;
-      background-color: black; /* 배경을 검은색으로 설정 */
-      color: white; /* 텍스트 색상을 흰색으로 설정 */
+      background-color: black;
+      color: white;
     }
 
     .navbar-custom {
       background-color: rgba(17, 17, 17, 0.8);
       position: relative;
       z-index: 3;
-    }
-
-    .navbar-custom .btn {
-      color: white;
-      border: 1px solid white;
-      margin-left: 10px;
-    }
-
-    .navbar-custom .btn:hover {
-      background-color: white;
-      color: #111;
+      padding: 10px 20px;
     }
 
     .logo-img {
-      height: 40px;
+      height: 50px;
       width: auto;
     }
 
     .content {
-      padding: 50px;
+      padding: 50px 20px;
       text-align: center;
     }
 
+    .blackhole-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 700px;
+    }
+
+    .blackhole-card img {
+      width: 120px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .blackhole-text {
+      flex: 1;
+      padding-left: 20px;
+      text-align: left;
+    }
+
     .footer {
-      position: absolute;
+      position: relative;
       bottom: 0;
       width: 100%;
       background-color: rgba(17, 17, 17, 0.8);
@@ -54,52 +66,77 @@
       text-align: center;
       padding: 10px;
       font-size: 14px;
-      z-index: 1;
     }
   </style>
 </head>
 <body>
 
-<!-- 네비게이션 바 -->
-<nav class="navbar navbar-custom px-3 py-2">
-  <div class="container-fluid d-flex justify-content-between align-items-center">
-    
-    <!-- 왼쪽: 홈 링크 + 블랙홀 로고 -->
-    <a href="index.html">
-      <img src="blackhole_logo.png" alt="블랙홀 로고" class="logo-img">
-    </a>
-
-    <!-- 오른쪽 버튼들 -->
-    <div class="d-flex">
-      <a href="blackhole.html" class="btn">블랙홀의 정보</a>
-      <a href="eventhorizon.html" class="btn">사건의 지평선</a>
-      <a href="fun.html" class="btn">재미있는 사실</a>
-      <a href="research.html" class="btn">최근 연구 정보</a>
-    </div>
+<nav class="navbar navbar-custom d-flex justify-content-between align-items-center">
+  <a href="index.html">
+    <img src="blackhole_logo.png" alt="블랙홀 로고" class="logo-img">
+  </a>
+  <div class="d-flex">
+    <a href="blackhole.html" class="btn">블랙홀 정보</a>
+    <a href="eventhorizon.html" class="btn">사건의 지평선</a>
+    <a href="fun.html" class="btn">재미있는 사실</a>
+    <a href="research.html" class="btn">최근 연구 정보</a>
   </div>
 </nav>
 
-<!-- 콘텐츠 영역 -->
 <div class="content">
-  <h1>블랙홀의 정보</h1>
-  <p>블랙홀은 강력한 중력을 가진 천체로, 빛조차 빠져나갈 수 없습니다.</p>
+  <h1>블랙홀이 되는 조건</h1>
+
+  <div class="blackhole-card">
+    <img src="blackhole_img1.jpg" alt="강한 중력 붕괴">
+    <div class="blackhole-text">
+      <h2>강한 중력 붕괴</h2>
+      <p>질량이 매우 큰 별이 붕괴하며 블랙홀이 생성됩니다.</p>
+    </div>
+  </div>
+
+  <div class="blackhole-card">
+    <img src="blackhole_img2.jpg" alt="슈바르츠실트 반경">
+    <div class="blackhole-text">
+      <h2>슈바르츠실트 반경 도달</h2>
+      <p>천체가 특정 크기 이하로 압축되면, 중력이 빛조차 빠져나올 수 없을 만큼 강해집니다.</p>
+    </div>
+  </div>
+
+  <div class="blackhole-card">
+    <img src="blackhole_img3.jpg" alt="사건의 지평선">
+    <div class="blackhole-text">
+      <h2>사건의 지평선 형성</h2>
+      <p>사건의 지평선 내부로 들어간 물체는 다시 빠져나올 수 없습니다.</p>
+    </div>
+  </div>
+
+  <h1>블랙홀 주변의 시간과 공간</h1>
+
+  <div class="blackhole-card">
+    <img src="blackhole_img6.jpg" alt="시간 지연">
+    <div class="blackhole-text">
+      <h2>시간 지연</h2>
+      <p>블랙홀 근처에서는 시간이 느리게 흐르며, 사건의 지평선에서는 정지된 것처럼 보입니다.</p>
+    </div>
+  </div>
+
+  <div class="blackhole-card">
+    <img src="blackhole_img7.jpg" alt="공간의 왜곡">
+    <div class="blackhole-text">
+      <h2>공간의 왜곡</h2>
+      <p>강력한 중력은 공간을 휘게 하고, 빛의 경로를 변경시킵니다.</p>
+    </div>
+  </div>
 </div>
 
-<!-- 푸터 -->
 <footer class="footer">
   © 2025 블랙홀 정보 | 모든 권리 보유 | 문의: info@blackhole.com |
-  <a href="https://svs.gsfc.nasa.gov/search/?search=black+hole&sort_by_1=relevance" target="_blank" style="color: white; text-decoration: underline;">
-    NASA 블랙홀 정보 검색
-  </a> |
-  <a href="https://namu.wiki/w/%EB%B8%94%EB%9E%99%ED%99%80" target="_blank" style="color: white; text-decoration: underline;">
-    나무위키 블랙홀 정보
-  </a> |
-  <a href="https://ko.wikipedia.org/wiki/%EB%B8%94%EB%9E%99%ED%99%80" target="_blank" style="color: white; text-decoration: underline;">
-    위키백과 블랙홀 정보
-  </a>
+  <a href="https://svs.gsfc.nasa.gov/search/?search=black+hole&sort_by_1=relevance" target="_blank">NASA 블랙홀 정보</a> |
+  <a href="https://namu.wiki/w/%EB%B8%94%EB%9E%99%ED%99%80" target="_blank">나무위키 블랙홀 정보</a> |
+  <a href="https://ko.wikipedia.org/wiki/%EB%B8%94%EB%9E%99%ED%99%80" target="_blank">위키백과 블랙홀 정보</a>
 </footer>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
