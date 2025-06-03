@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>블랙홀 정보</title>
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     * {
@@ -14,10 +13,9 @@
 
     html, body {
       height: 100%;
-      overflow: hidden;
+      overflow-x: hidden;
     }
 
-    /* 배경 영상 스타일 */
     .video-container {
       position: fixed;
       top: 0;
@@ -37,18 +35,16 @@
       object-fit: cover;
     }
 
-    /* BLACKHOLE 글씨 스타일 */
     .blackhole-text {
       position: absolute;
-      top: 25%; /* 기존보다 아래로 조정 */
+      top: 25%;
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 4rem;
       font-weight: bold;
       color: white;
-      opacity: 0;
       text-align: center;
-      z-index: 2; /* 다른 요소들보다 위에 표시 */
+      z-index: 2;
       animation: fadeIn 3s ease-in-out forwards;
     }
 
@@ -59,8 +55,10 @@
 
     .navbar-custom {
       background-color: rgba(17, 17, 17, 0.8);
-      position: relative;
-      z-index: 3; /* 바보다 위에 위치 */
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 3;
     }
 
     .navbar-custom .btn {
@@ -79,9 +77,20 @@
       width: auto;
     }
 
-    /* 푸터 스타일 */
+    /* 블랙홀 설명을 처음부터 표시하지만, 화면 아래에 배치 */
+    .content-container {
+      position: relative;
+      margin: 150vh auto 20px;
+      text-align: center;
+      color: white;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      max-width: 600px;
+    }
+
     .footer {
-      position: absolute;
+      position: relative;
       bottom: 0;
       width: 100%;
       background-color: rgba(17, 17, 17, 0.8);
@@ -95,7 +104,6 @@
 </head>
 <body>
 
-<!-- 배경 영상 -->
 <div class="video-container">
   <video class="video-background" autoplay loop muted>
     <source src="blackhole.mp4" type="video/mp4">
@@ -103,35 +111,46 @@
   </video>
 </div>
 
-<!-- BLACKHOLE 글씨 -->
 <a href="index.html" class="blackhole-text" style="text-decoration: none;">BLACK HOLE</a>
+
+<!-- 블랙홀 정보가 자연스럽게 아래쪽에 배치됨 -->
+<div class="content-container" id="blackhole-info">
+  <h1>블랙홀(Black Hole)</h1>
+  <p>블랙홀은 중력이 매우 강하여 빛을 포함한 어떠한 물질·정보도 탈출할 수 없는 시공간상의 중력 특이점으로 대표되는 천체이다.
+    일반적으로 무거운 별의 수명이 다했을 때 중력붕괴 과정을 통해 만들어진다. 용어인 '블랙홀'은 중력 특이점을 중심으로 형성되는 구체의 경계 내부의 빛이
+    바깥으로는 전달되지 않아, 외부의 관측자가 보기에 마치 공간이 텅 빈 암흑처럼 보이므로 붙은 명칭이다.</p>
+</div>
 
 <nav class="navbar navbar-custom px-3 py-2">
   <div class="container-fluid d-flex justify-content-between align-items-center">
-    
-    <!-- 왼쪽: 홈 링크 + 블랙홀 로고 -->
     <a href="index.html">
       <img src="blackhole_logo.png" alt="블랙홀 로고" class="logo-img">
     </a>
-
-    <!-- 오른쪽 버튼들 -->
     <div class="d-flex">
       <a href="blackhole.html" class="btn">블랙홀의 정보</a>
       <a href="eventhorizon.html" class="btn">사건의 지평선</a>
       <a href="fun.html" class="btn">재미있는 사실</a>
       <a href="research.html" class="btn">최근 연구 정보</a>
     </div>
-
-
   </div>
 </nav>
 
-<!-- 푸터 -->
 <footer class="footer">
-  © 2025 블랙홀 정보 | 모든 권리 보유 | 문의: info@blackhole.com
+  © 2025 블랙홀 정보 | 모든 권리 보유 | 문의: info@blackhole.com |
+  <a href="https://svs.gsfc.nasa.gov/search/?search=black+hole&sort_by_1=relevance" target="_blank" style="color: white; text-decoration: underline;">
+    NASA 블랙홀 정보 검색
+  </a> |
+  <a href="https://namu.wiki/w/%EB%B8%94%EB%9E%99%ED%99%80" target="_blank" style="color: white; text-decoration: underline;">
+    나무위키 블랙홀 정보
+  </a> |
+  <a href="https://ko.wikipedia.org/wiki/%EB%B8%94%EB%9E%99%ED%99%80" target="_blank" style="color: white; text-decoration: underline;">
+    위키백과 블랙홀 정보
+  </a>
 </footer>
 
-<!-- Bootstrap JS -->
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
