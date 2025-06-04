@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>최근 블랙홀 연구</title>
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     * {
@@ -14,8 +13,8 @@
 
     html, body {
       height: 100%;
-      background-color: black; /* 배경을 검은색으로 설정 */
-      color: white; /* 텍스트 색상을 흰색으로 설정 */
+      background-color: black;
+      color: white;
     }
 
     .navbar-custom {
@@ -41,12 +40,12 @@
     }
 
     .content {
-      padding: 50px;
+      padding: 50px 20px;
       text-align: center;
     }
 
     .footer {
-      position: absolute;
+      position: relative;
       bottom: 0;
       width: 100%;
       background-color: rgba(17, 17, 17, 0.8);
@@ -56,6 +55,18 @@
       font-size: 14px;
       z-index: 1;
     }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: white;
+    }
+
+    .card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
   </style>
 </head>
 <body>
@@ -63,13 +74,9 @@
 <!-- 네비게이션 바 -->
 <nav class="navbar navbar-custom px-3 py-2">
   <div class="container-fluid d-flex justify-content-between align-items-center">
-    
-    <!-- 왼쪽: 홈 링크 + 블랙홀 로고 -->
     <a href="index.html">
       <img src="blackhole_logo.png" alt="블랙홀 로고" class="logo-img">
     </a>
-
-    <!-- 오른쪽 버튼들 -->
     <div class="d-flex">
       <a href="blackhole.html" class="btn">블랙홀의 정보</a>
       <a href="eventhorizon.html" class="btn">사건의 지평선</a>
@@ -83,6 +90,74 @@
 <div class="content">
   <h1>최근 블랙홀 연구</h1>
   <p>과학자들은 중력파를 통해 블랙홀 충돌을 연구하며, 새로운 발견이 계속 이루어지고 있습니다.</p>
+
+  <div class="container mt-5">
+
+    <!-- 카드 1 -->
+    <div class="card mb-4 p-3">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-4">
+          <img src="research1.jpg" alt="우주가 블랙홀 안에 있을 수도?" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-8 text-start">
+          <h4 class="card-title">우주가 블랙홀 안에 있을 수도?</h4>
+          <p class="card-text">
+            일부 이론에서는 우리 우주가 초대형 블랙홀 내부에 존재할 가능성이 제기되고 있습니다. 
+            이는 시계방향 은하 회전의 비대칭성과 관련된 연구로, 우주의 기원을 새롭게 해석할 수 있는 단서를 제공합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 카드 2 -->
+    <div class="card mb-4 p-3">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-4">
+          <img src="research2.jpg" alt="초고속 블랙홀 성장" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-8 text-start">
+          <h4 class="card-title">초고속 블랙홀 성장 발견</h4>
+          <p class="card-text">
+            NASA는 초기 우주에서 평균보다 40배 빠르게 성장하는 초대질량 블랙홀을 발견했습니다. 
+            이는 우주 초기의 구조 형성과 은하 진화에 대한 이론을 재조명하게 만들고 있습니다.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 카드 3 -->
+    <div class="card mb-4 p-3">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-4">
+          <img src="research3.jpg" alt="자기장 정렬 관측" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-8 text-start">
+          <h4 class="card-title">우리 은하 중심의 자기장 정렬 관측</h4>
+          <p class="card-text">
+            사건지평선망원경(EHT)을 통해 우리 은하 중심 블랙홀 주변의 자기장이 정렬된 모습을 포착했습니다.
+            이는 블랙홀 주변 물질의 흐름과 제트 생성 메커니즘을 이해하는 데 큰 도움이 됩니다.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 카드 4 -->
+    <div class="card mb-4 p-3">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-4">
+          <img src="research4.jpg" alt="간섭계 기술" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-8 text-start">
+          <h4 class="card-title">우주 기반 간섭계 기술 발전</h4>
+          <p class="card-text">
+            연구자들은 우주에 간섭계를 배치해 블랙홀의 그림자를 고해상도로 관측하려는 기술을 개발 중입니다. 
+            이는 블랙홀 이미징의 정확도를 비약적으로 향상시킬 전망입니다.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 <!-- 푸터 -->
@@ -99,7 +174,6 @@
   </a>
 </footer>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
