@@ -1,27 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>재미있는 블랙홀 사실</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
-
     html, body {
       height: 100%;
-      background-color: black; /* 배경을 검은색으로 설정 */
-      color: white; /* 텍스트 색상을 흰색으로 설정 */
+      background-color: black;
+      color: white;
     }
 
     .navbar-custom {
       background-color: rgba(17, 17, 17, 0.8);
-      position: relative;
-      z-index: 3;
     }
 
     .navbar-custom .btn {
@@ -41,20 +33,27 @@
     }
 
     .content {
-      padding: 50px;
+      padding: 50px 20px;
       text-align: center;
     }
 
     .footer {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
       background-color: rgba(17, 17, 17, 0.8);
       color: white;
       text-align: center;
       padding: 10px;
       font-size: 14px;
-      z-index: 1;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: white;
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
     }
   </style>
 </head>
@@ -63,13 +62,9 @@
 <!-- 네비게이션 바 -->
 <nav class="navbar navbar-custom px-3 py-2">
   <div class="container-fluid d-flex justify-content-between align-items-center">
-    
-    <!-- 왼쪽: 홈 링크 + 블랙홀 로고 -->
     <a href="index.html">
-      <img src="blackhole_logo.png" alt="블랙홀 로고" class="logo-img">
+      <img src="blackhole_logo.png" alt="블랙홀 로고" class="logo-img" />
     </a>
-
-    <!-- 오른쪽 버튼들 -->
     <div class="d-flex">
       <a href="blackhole.html" class="btn">블랙홀의 정보</a>
       <a href="eventhorizon.html" class="btn">사건의 지평선</a>
@@ -81,25 +76,89 @@
 
 <!-- 콘텐츠 영역 -->
 <div class="content">
-  <h1>재미있는 블랙홀 사실</h1>
-  <p>블랙홀은 시간을 느려지게 만드는 중력 효과를 일으킬 수 있으며, 이론적으로는 시간 여행이 가능할 수도 있습니다!</p>
+  <h1>블랙홀에 관한 재미있는 사실들</h1>
+  <p>알고 보면 더 신기한, 블랙홀의 미스터리한 면모를 소개합니다!</p>
+
+  <div class="container mt-5">
+
+    <!-- 카드 1 -->
+    <div class="card mb-4 p-3">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-4">
+          <img src="fun1.jpg" alt="시간 왜곡" class="img-fluid shadow" />
+        </div>
+        <div class="col-md-8 text-start">
+          <h4 class="card-title">블랙홀 근처에서는 시간이 느려진다</h4>
+          <p class="card-text">
+            블랙홀 주변의 강한 중력은 시간의 흐름을 늦춥니다. 이론상 블랙홀 가까이 간 사람은 우주 밖보다 훨씬 느리게 시간이 흐르며, 
+            마치 '시간 여행'처럼 느껴질 수 있어요!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 카드 2 -->
+    <div class="card mb-4 p-3">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-4">
+          <img src="fun2.jpg" alt="스파게티 현상" class="img-fluid shadow" />
+        </div>
+        <div class="col-md-8 text-start">
+          <h4 class="card-title">블랙홀에 빨려 들어가면 '스파게티'처럼 늘어난다?</h4>
+          <p class="card-text">
+            '스파게티화(Spaghettification)'는 중력차 때문에 생기는 현상입니다. 
+            몸의 아래쪽이 위쪽보다 더 빨리 당겨져서 길게 늘어나는 효과가 생기죠!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 카드 3 -->
+    <div class="card mb-4 p-3">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-4">
+          <img src="fun3.jpg" alt="소리 없는 블랙홀" class="img-fluid shadow" />
+        </div>
+        <div class="col-md-8 text-start">
+          <h4 class="card-title">블랙홀에서는 소리가 안 들린다</h4>
+          <p class="card-text">
+            우주는 진공 상태이기 때문에 소리는 전달되지 않아요. 
+            블랙홀에서 아무리 큰 일이 일어나도, 그 소리는 절대 들을 수 없습니다. 완벽한 '무음 재난'이죠.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 카드 4 -->
+    <div class="card mb-4 p-3">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-4">
+          <img src="fun4.jpg" alt="블랙홀도 증발한다" class="img-fluid shadow" />
+        </div>
+        <div class="col-md-8 text-start">
+          <h4 class="card-title">블랙홀도 영원하지 않다</h4>
+          <p class="card-text">
+            블랙홀은 '호킹 복사'라는 현상으로 아주 천천히 에너지를 잃고 결국 증발한다고 합니다. 
+            이론적으로는 블랙홀도 죽는 날이 있다는 뜻이죠.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 <!-- 푸터 -->
 <footer class="footer">
-  © 2025 블랙홀 정보 | 모든 권리 보유 | 문의: info@blackhole.com |
-  <a href="https://svs.gsfc.nasa.gov/search/?search=black+hole&sort_by_1=relevance" target="_blank" style="color: white; text-decoration: underline;">
-    NASA 블랙홀 정보 검색
-  </a> |
-  <a href="https://namu.wiki/w/%EB%B8%94%EB%9E%99%ED%99%80" target="_blank" style="color: white; text-decoration: underline;">
-    나무위키 블랙홀 정보
+  © 2025 블랙홀 정보 | 문의: info@blackhole.com |
+  <a href="https://svs.gsfc.nasa.gov/search/?search=black+hole" target="_blank" style="color: white; text-decoration: underline;">
+    NASA 블랙홀 영상
   </a> |
   <a href="https://ko.wikipedia.org/wiki/%EB%B8%94%EB%9E%99%ED%99%80" target="_blank" style="color: white; text-decoration: underline;">
-    위키백과 블랙홀 정보
+    위키백과 정보
   </a>
 </footer>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
